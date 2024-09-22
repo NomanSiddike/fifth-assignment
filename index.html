@@ -11,10 +11,45 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File Link  -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <nav></nav>
+  <body class="lexend">
+    <header class="bg-slate-100">
+      <nav class="w-11/12 mx-auto pb-10">
+        <!-- Nav Section Start -->
+        <div class="navbar flex justify-between">
+          <div class="bg-[#B4F461] rounded-md">
+            <button
+              class="btn btn-square btn-ghost px-12 text-sm font-semibold text-black"
+            >
+              Blog
+            </button>
+          </div>
+          <div class="">
+            <img src="./assets/logo.png" alt="" />
+            <h2 class="px-2 text-sm font-semibold text-black">
+              DONATE BANGLADESH
+            </h2>
+          </div>
+          <div class="">
+            <img src="./assets/coin.png" alt="" />
+            <div class="px-2 text-sm font-semibold text-gray-600">
+              <span>5500</span> BDT
+            </div>
+          </div>
+        </div>
+        <!-- Nav Section End -->
+      </nav>
     </header>
     <main></main>
     <footer></footer>
