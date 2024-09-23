@@ -44,7 +44,7 @@
           <div class="">
             <img src="./assets/coin.png" alt="" />
             <div class="px-2 text-sm font-semibold text-gray-600">
-              <span>5500</span> BDT
+              <span id="donar-balance">5500</span> BDT
             </div>
           </div>
         </div>
@@ -89,7 +89,14 @@
                   class="flex items-center bg-gray-100 px-2 py-1 rounded-full"
                 >
                   <img src="./assets/coin.png" alt="" />
-                  <span class="ml-2 text-sm font-semibold">0 BDT</span>
+                  <h4>
+                    <span
+                      id="card1-donated-amount"
+                      class="ml-2 text-sm font-semibold"
+                      >0</span
+                    >
+                    BDT
+                  </h4>
                 </div>
               </div>
               <div class="mt-4">
@@ -112,11 +119,13 @@
               </div>
               <div class="mt-4">
                 <input
+                  id="donation-Card1-Input-Amount"
                   class="w-full border border-gray-300 rounded-lg p-2"
-                  type="number"
+                  type="text"
                   placeholder="Write Donation Amount"
                 />
                 <button
+                  id="donation-card1-button"
                   class="w-full bg-[#B4F461] text-black font-semibold py-2 mt-4 rounded-lg hover:bg-green-600"
                 >
                   Donate Now
@@ -143,7 +152,14 @@
                   class="flex items-center bg-gray-100 px-2 py-1 rounded-full"
                 >
                   <img src="./assets/coin.png" alt="" />
-                  <span class="ml-2 text-sm font-semibold">0 BDT</span>
+                  <h4>
+                    <span
+                      id="card2-donated-amount"
+                      class="ml-2 text-sm font-semibold"
+                      >0</span
+                    >
+                    BDT
+                  </h4>
                 </div>
               </div>
               <div class="mt-4">
@@ -166,11 +182,13 @@
               </div>
               <div class="mt-4">
                 <input
+                  id="donation-Card2-Input-Amount"
                   class="w-full border border-gray-300 rounded-lg p-2"
                   type="number"
                   placeholder="Write Donation Amount"
                 />
                 <button
+                  id="donation-card2-button"
                   class="w-full bg-[#B4F461] text-black font-semibold py-2 mt-4 rounded-lg hover:bg-green-600"
                 >
                   Donate Now
@@ -197,7 +215,14 @@
                   class="flex items-center bg-gray-100 px-2 py-1 rounded-full"
                 >
                   <img src="./assets/coin.png" alt="" />
-                  <span class="ml-2 text-sm font-semibold">0 BDT</span>
+                  <h4>
+                    <span
+                      id="card3-donated-amount"
+                      class="ml-2 text-sm font-semibold"
+                      >0</span
+                    >
+                    BDT
+                  </h4>
                 </div>
               </div>
               <div class="mt-4">
@@ -221,11 +246,13 @@
               </div>
               <div class="mt-4">
                 <input
+                  id="donation-Card3-Input-Amount"
                   class="w-full border border-gray-300 rounded-lg p-2"
                   type="number"
                   placeholder="Write Donation Amount"
                 />
                 <button
+                  id="donation-card3-button"
                   class="w-full bg-[#B4F461] text-black font-semibold py-2 mt-4 rounded-lg hover:bg-green-600"
                 >
                   Donate Now
@@ -240,5 +267,6 @@
     <footer></footer>
     <!-- JS file link  -->
     <script src="./js/index.js"></script>
+    <script src="./js/function.js"></script>
   </body>
 </html>
