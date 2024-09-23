@@ -1,3 +1,9 @@
 .lexend {
   font-family: "Lexend", sans-serif;
 }
+
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}

@@ -63,3 +63,17 @@ document
     card3DonatedAmountElement.innerText =
       card3DonatedAmount + donationCard3InputAmount;
   });
+
+// Nav Sticky Part
+document.addEventListener("DOMContentLoaded", function () {
+  let nav = document.getElementById("nav");
+  let current_pos = nav.offsetTop;
+  window.onscroll = function () {
+    let window_pos = document.documentElement.scrollTop;
+    if (window_pos >= current_pos) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  };
+});
