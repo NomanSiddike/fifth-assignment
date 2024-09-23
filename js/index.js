@@ -18,6 +18,18 @@ document
     donarBalanceElement.innerText = remainingBalance;
     card1DonatedAmountElement.innerText =
       card1DonatedAmount + donationCard1InputAmount;
+
+      // History Activities
+      const historyItem = document.createElement('div');
+      historyItem.className = "w-10/12 mx-auto bg-white rounded border-2 border-gray-400 rounded-full px-5 py-5 mb-2";
+      historyItem.innerHTML = `
+      <p class="font-bold">${donationCard1InputAmount} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
+      <p class="">Date: ${new Date().toLocaleString()} </p>\
+      `
+
+      const historyContainer = document.getElementById("history-list");
+      historyContainer.appendChild(historyItem);
+
   });
 
 // Donar Card2 Activities
@@ -40,6 +52,18 @@ document
     donarBalanceElement.innerText = remainingBalance;
     card2DonatedAmountElement.innerText =
       card2DonatedAmount + donationCard2InputAmount;
+
+      // History Activities
+      const historyItem = document.createElement('div');
+      historyItem.className = "w-10/12 mx-auto bg-white rounded border-2 border-gray-400 rounded-full px-5 py-5 mb-2";
+      historyItem.innerHTML = `
+      <p class="font-bold">${donationCard2InputAmount} Taka is Donated for Flood-2024 at Feni, Bangladesh</p>
+      <p class="">Date: ${new Date().toLocaleString()} </p>\
+      `
+
+      const historyContainer = document.getElementById("history-list");
+      historyContainer.appendChild(historyItem);
+
   });
 
 // Donar Card3 Activities
@@ -62,6 +86,18 @@ document
     donarBalanceElement.innerText = remainingBalance;
     card3DonatedAmountElement.innerText =
       card3DonatedAmount + donationCard3InputAmount;
+
+      // History Activities
+      const historyItem = document.createElement('div');
+      historyItem.className = "w-10/12 mx-auto bg-white rounded border-2 border-gray-400 rounded-full px-5 py-5 mb-2";
+      historyItem.innerHTML = `
+      <p class="font-bold">${donationCard3InputAmount} Taka is Aid for Injured in the Quota Movement, Bangladesh</p>
+      <p class="">Date: ${new Date().toLocaleString()} </p>\
+      `
+
+      const historyContainer = document.getElementById("history-list");
+      historyContainer.appendChild(historyItem);
+
   });
 
 // Nav Sticky Part
@@ -82,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const historyTab = document.getElementById("button-history");
 historyTab.addEventListener("click", function () {
   document.getElementById("donation-container").classList.add("hidden");
+  document.getElementById("history").classList.remove("hidden");
   historyTab.classList.add("text-black", "font-bold", "bg-[#B4F461]");
   donationTab.classList.remove("text-black", "font-bold", "bg-[#B4F461]");
 });
@@ -90,5 +127,6 @@ const donationTab = document.getElementById("button-donation");
 donationTab.addEventListener("click", function () {
   historyTab.classList.remove("text-black", "font-bold", "bg-[#B4F461]");
   document.getElementById("donation-container").classList.remove("hidden");
+  document.getElementById("history").classList.add("hidden");
   donationTab.classList.add("text-black", "font-bold", "bg-[#B4F461]");
 });
