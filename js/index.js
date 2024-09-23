@@ -77,3 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+
+// Button Transformation
+const historyTab = document.getElementById("button-history");
+historyTab.addEventListener("click", function () {
+  document.getElementById("donation-container").classList.add("hidden");
+  historyTab.classList.add("text-black", "font-bold", "bg-[#B4F461]");
+  donationTab.classList.remove("text-black", "font-bold", "bg-[#B4F461]");
+});
+
+const donationTab = document.getElementById("button-donation");
+donationTab.addEventListener("click", function () {
+  historyTab.classList.remove("text-black", "font-bold", "bg-[#B4F461]");
+  document.getElementById("donation-container").classList.remove("hidden");
+  donationTab.classList.add("text-black", "font-bold", "bg-[#B4F461]");
+});

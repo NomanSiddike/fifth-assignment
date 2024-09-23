@@ -57,12 +57,18 @@
       <section class="w-10/12 mx-auto mb-16">
         <div class="flex gap-4 justify-center mt-20">
           <div>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+            <button
+              id="button-donation"
+              class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-black font-bold bg-[#B4F461]"
+            >
               Donation
             </button>
           </div>
           <div>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+            <button
+              id="button-history"
+              class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+            >
               History
             </button>
           </div>
@@ -71,7 +77,7 @@
       <!-- Banner Section End  -->
 
       <!-- Donation Section Start  -->
-      <section class="w-10/12 mx-auto">
+      <section id="donation-container" class="w-10/12 mx-auto">
         <!-- Donation Card-1  -->
         <div
           class="bg-white p-4 rounded-lg shadow-lg max-w-7xl mx-auto border-2 border-gray-200"
@@ -121,7 +127,7 @@
                 <input
                   id="donation-Card1-Input-Amount"
                   class="w-full border border-gray-300 rounded-lg p-2"
-                  type="text"
+                  type="number"
                   placeholder="Write Donation Amount"
                 />
                 <button
