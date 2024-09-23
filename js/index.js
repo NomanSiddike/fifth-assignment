@@ -165,3 +165,14 @@ donationTab.addEventListener("click", function () {
   document.getElementById("history").classList.add("hidden");
   donationTab.classList.add("text-black", "font-bold", "bg-[#B4F461]");
 });
+
+// Blog Part 
+document.getElementById("blog-button").addEventListener('click',function(){
+  window.location.href = "/blog.html";
+})
+
+// Home Part 
+document.getElementById("home-button").addEventListener('click', function(){
+  window.location.href = "/index.html";
+  // console.log("a");
+});
