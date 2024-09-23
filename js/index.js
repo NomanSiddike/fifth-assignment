@@ -5,6 +5,16 @@ document
     const donationCard1InputAmount = getInputFieldById(
       "donation-Card1-Input-Amount"
     );
+
+    if(donationCard1InputAmount<0){
+      alert("Amount is a Negative Number")
+      return;
+    }
+    else if(donationCard1InputAmount==0){
+      alert("Zero Amount can't add")
+      return;
+    }
+  
     const card1DonatedAmount = getTextById("card1-donated-amount");
     const card1DonatedAmountElement = getTextElementById(
       "card1-donated-amount"
@@ -18,6 +28,8 @@ document
     donarBalanceElement.innerText = remainingBalance;
     card1DonatedAmountElement.innerText =
       card1DonatedAmount + donationCard1InputAmount;
+    
+      document.getElementById("donation-Card1-Input-Amount").value = "";
 
       // History Activities
       const historyItem = document.createElement('div');
@@ -39,6 +51,17 @@ document
     const donationCard2InputAmount = getInputFieldById(
       "donation-Card2-Input-Amount"
     );
+    
+    if(donationCard2InputAmount<0){
+      alert("Amount is a Negative Number")
+      return;
+    }
+    else if(donationCard2InputAmount==0){
+      alert("Zero Amount can't add")
+      return;
+    }
+
+
     const card2DonatedAmount = getTextById("card2-donated-amount");
     const card2DonatedAmountElement = getTextElementById(
       "card2-donated-amount"
@@ -53,6 +76,7 @@ document
     card2DonatedAmountElement.innerText =
       card2DonatedAmount + donationCard2InputAmount;
 
+      document.getElementById("donation-Card2-Input-Amount").value = "";
       // History Activities
       const historyItem = document.createElement('div');
       historyItem.className = "w-10/12 mx-auto bg-white rounded border-2 border-gray-400 rounded-full px-5 py-5 mb-2";
@@ -73,6 +97,16 @@ document
     const donationCard3InputAmount = getInputFieldById(
       "donation-Card3-Input-Amount"
     );
+
+    if(donationCard3InputAmount<0){
+      alert("Amount is a Negative Number")
+      return;
+    }
+    else if(donationCard3InputAmount==0){
+      alert("Zero Amount can't add")
+      return;
+    }
+
     const card3DonatedAmount = getTextById("card3-donated-amount");
     const card3DonatedAmountElement = getTextElementById(
       "card3-donated-amount"
@@ -87,6 +121,7 @@ document
     card3DonatedAmountElement.innerText =
       card3DonatedAmount + donationCard3InputAmount;
 
+      document.getElementById("donation-Card3-Input-Amount").value = "";
       // History Activities
       const historyItem = document.createElement('div');
       historyItem.className = "w-10/12 mx-auto bg-white rounded border-2 border-gray-400 rounded-full px-5 py-5 mb-2";
