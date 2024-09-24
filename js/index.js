@@ -10,7 +10,7 @@ document
       alert("Amount is a Negative Number")
       return;
     }
-    else if(donationCard1InputAmount==0){
+    else if(donationCard1InputAmount==0 || isNaN(donationCard1InputAmount)){
       alert("Zero Amount can't add")
       return;
     }
@@ -30,8 +30,11 @@ document
       card1DonatedAmount + donationCard1InputAmount;
     
       document.getElementById("donation-Card1-Input-Amount").value = "";
-      // Modal Part 
 
+      // Modal Part 
+      const modal = document.getElementById("donation-card1-button");
+      modal.onclick=my_modal_5.showModal();
+      
 
       // History Activities
       const historyItem = document.createElement('div');
@@ -58,7 +61,7 @@ document
       alert("Amount is a Negative Number")
       return;
     }
-    else if(donationCard2InputAmount==0){
+    else if(donationCard2InputAmount==0 || isNaN(donationCard2InputAmount)){
       alert("Zero Amount can't add")
       return;
     }
@@ -79,6 +82,11 @@ document
       card2DonatedAmount + donationCard2InputAmount;
 
       document.getElementById("donation-Card2-Input-Amount").value = "";
+
+      // Modal Part 
+      const modal = document.getElementById("donation-card2-button");
+      modal.onclick=my_modal_5.showModal();
+
       // History Activities
       const historyItem = document.createElement('div');
       historyItem.className = "w-10/12 mx-auto bg-white rounded border-2 border-gray-400 rounded-full px-5 py-5 mb-2";
@@ -104,7 +112,7 @@ document
       alert("Amount is a Negative Number")
       return;
     }
-    else if(donationCard3InputAmount==0){
+    else if(donationCard3InputAmount==0 || isNaN(donationCard3InputAmount)){
       alert("Zero Amount can't add")
       return;
     }
@@ -124,6 +132,11 @@ document
       card3DonatedAmount + donationCard3InputAmount;
 
       document.getElementById("donation-Card3-Input-Amount").value = "";
+
+      // Modal Part 
+      const modal = document.getElementById("donation-card3-button");
+      modal.onclick=my_modal_5.showModal();
+
       // History Activities
       const historyItem = document.createElement('div');
       historyItem.className = "w-10/12 mx-auto bg-white rounded border-2 border-gray-400 rounded-full px-5 py-5 mb-2";
