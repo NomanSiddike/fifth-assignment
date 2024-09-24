@@ -30,6 +30,8 @@ document
       card1DonatedAmount + donationCard1InputAmount;
     
       document.getElementById("donation-Card1-Input-Amount").value = "";
+      // Modal Part 
+
 
       // History Activities
       const historyItem = document.createElement('div');
@@ -168,11 +170,7 @@ donationTab.addEventListener("click", function () {
 
 // Blog Part 
 document.getElementById("blog-button").addEventListener('click',function(){
-  window.location.href = "/blog.html";
+  window.location.href = "blog.html";
 })
 
-// Home Part 
-document.getElementById("home-button").addEventListener('click', function(){
-  window.location.href = "/index.html";
-  // console.log("a");
-});
+
